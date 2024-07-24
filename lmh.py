@@ -1488,8 +1488,7 @@ if selected == "Trading Portfolio":
             unsafe_allow_html=True
         )
 
-    SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
-
+    SCOPES = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
     # Đường dẫn tới file JSON credentials
     CREDS_FILE = 'evident-bedrock-428510-a2-ef6d61f76eb0.json'
 
