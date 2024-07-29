@@ -1130,12 +1130,10 @@ if selected == "Home":
                     fig.update_xaxes(title_text="Time")
                     st.plotly_chart(fig)
                     wat = pd.DataFrame(his)
-                    st.markdown("<h1 style='font-size: 16px; font-weight: bold;'>Các phương pháp định giá</h1>", unsafe_allow_html=True)
                     st.write(wat)
                     save_to_csv(wat)
                 with watch:
                    
-                    st.markdown("<h1 style='text-align: center; font-weight: bold;'>WATCHLIST</h1>", unsafe_allow_html=True)
 
                     mh = pd.read_csv('ticker_data.csv')
 
